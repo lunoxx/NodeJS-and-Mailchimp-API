@@ -5,8 +5,8 @@ const request = require("request");
 
 const client = require("@mailchimp/mailchimp_marketing");
 client.setConfig({
-    apiKey: "29dcc77d9431925044a96f05209fe2f9",
-    server: "us21",
+    apiKey: "", // complete your API KEY from mailchimp
+    server: "",
 });
 
 
@@ -62,9 +62,3 @@ app.post("/home", function(req, res) {
 app.listen(3000, function() {
     console.log("Server is running on port 3000.");
 })
-
-// API KEY:
-// 29dcc77d9431925044a96f05209fe2f9-us21
-
-// List ID: 
-// b42cc8bd0b
